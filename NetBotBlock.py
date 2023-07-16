@@ -3,7 +3,7 @@ import logging
 logging.basicConfig(filename='uygulama.log', level=logging.INFO)
 
 def main():
-    proxies = load_proxies_from_file("C:\\Users\\Xyeta\\Desktop\\proxy (2).txt")
+    proxies = load_proxies_from_file("proxy.txt")
     bot_region = "90"  # Bölgenizin kodunu buraya girin
     target_region = "TR"  # Hedef bölgenin kodunu buraya girin (Örneğin, "FR" Fransa)
 
