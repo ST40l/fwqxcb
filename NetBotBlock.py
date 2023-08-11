@@ -33,6 +33,10 @@ def select_fastest_proxy(proxies):
 
 def get_public_ip():
     # Halka açık IP adresini almak için uygun bir yöntem kullanın
+    # Örnek olarak:
+    # import requests
+    # response = requests.get('https://api.ipify.org?format=json')
+    # ip = response.json()['ip']
     pass
 
 def is_region_allowed(ip, bot_region, target_region):
@@ -47,5 +51,5 @@ def block_ip(ip):
     # Bu fonksiyon, ilgili IP adresini devre dışı bırakacak işlemleri gerçekleştirmelidir
     print("IP adresi devre dışı bırakıldı:", ip)
 
-if name == "main":
+if __name__ == "__main__":
     main()
