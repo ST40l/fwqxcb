@@ -4,8 +4,9 @@ logging.basicConfig(filename='uygulama.log', level=logging.INFO)
 
 def main():
     proxies = load_proxies_from_file("proxy.txt")
-    bot_region = "90"  # Bölgenizin kodunu buraya girin
-    target_region = "TR"  # Hedef bölgenin kodunu buraya girin (Örneğin, "FR" Fransa)
+
+    bot_region = input("Bot bölgesi kodunu girin: ")
+    target_region = input("Hedef ülke kodunu girin: ")
 
     while True:
         try:
@@ -46,5 +47,5 @@ def block_ip(ip):
     # Bu fonksiyon, ilgili IP adresini devre dışı bırakacak işlemleri gerçekleştirmelidir
     print("IP adresi devre dışı bırakıldı:", ip)
 
-if __name__ == "__main__":
+if name == "main":
     main()
